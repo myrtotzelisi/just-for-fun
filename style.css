@@ -6,14 +6,16 @@ body {
     justify-content: space-between;
     align-items: center;
     height: auto;
+    background-color:aliceblue;
 }
 
 input {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     outline: none;
     color: cadetblue;
     font-size: 20px;
     border: 3px dashed purple;
+    padding: 5px;
 
 
 }
@@ -23,6 +25,7 @@ input::placeholder {
 }
 
 h1 {
+    font-size: 50px;
     color: purple;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
@@ -35,5 +38,21 @@ h1:hover {
 
 .heavy {
     font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: monospace;
+}
+
+button {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border: 3px solid cadetblue;
+    color: cadetblue;
+    font-weight: bold;
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: purple;
 }
