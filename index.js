@@ -1,5 +1,4 @@
 const body = document.body
-const input = document.getElementsByTagName('input')
 let count = 0;
 
 
@@ -10,7 +9,7 @@ function handleClick() {
         text.style.color = 'green'
         text.classList.add('heavy')
         body.appendChild(text)
-        const name = input[0].value
+        let name = document.getElementsByTagName('input')[0].value
     if(count===1) {
         text.textContent =  `What do you want ${name}?`
     }
@@ -32,9 +31,11 @@ function handleClick() {
             allPs[0].parentElement.removeChild(allPs[0])
         }
         count =0 ;
+        document.getElementsByTagName('input')[0].value= ''
+        console.log(name)
     }
     
     console.log(count)
-    console.log(input)
+    console.log(name)
 }
 
