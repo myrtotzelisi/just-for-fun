@@ -11,7 +11,7 @@ function handleClick() {
         body.appendChild(text)
         let name = document.getElementsByTagName('input')[0].value
     if(count===1) {
-        text.textContent =  `What do you want ${name}?`
+        text.textContent =  `What do you want, ${name}?`
     }
     else if(count===2){
         text.style.color = 'blue'
