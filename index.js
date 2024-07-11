@@ -12,11 +12,11 @@ function handleClick() {
         body.appendChild(text)
         const name = input[0].value
     if(count===1) {
-        text.textContent = `what do you want ${name}?`
+        text.textContent =  `What do you want ${name}?`
     }
     else if(count===2){
         text.style.color = 'blue'
-        text.textContent = `${name} stop bothering me!`;
+        text.textContent = `${name}, stop bothering me!`;
     }
     else if(count===3) {
         text.style.color = 'red'
@@ -24,7 +24,7 @@ function handleClick() {
     }
     else if(count===4)  {
         text.style.color = 'gray'
-        text.textContent = "ok, that's enough..."
+        text.textContent = "Ok, that's enough..."
     }
     else {
         const allPs = document.getElementsByTagName('p')
