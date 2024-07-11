@@ -39,6 +39,11 @@ h1:hover {
 .heavy {
     font-size: 40px;
     font-family: monospace;
+    width: 80%;
+}
+
+body p:nth-child(odd) {
+    text-align: right;
 }
 
 button {
